@@ -1,3 +1,3 @@
 ![甘特圖](甘特圖)
 ![顯示任務](顯示任務)
-![pert/cpm圖](PERT CPM 圖)
+![pert/cpm圖](PERT圖)
