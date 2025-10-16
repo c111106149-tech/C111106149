@@ -48,6 +48,11 @@
 
 ## 三、功能分解圖 (Functional Decomposition Diagram)
 
+![使用案例](功能圖.png)
+
+
+## 四、使用案例圖(Use Case Diagram)
+
 ```mermaid
 
 graph LR
@@ -95,11 +100,6 @@ graph LR
 
 ---
 
-
-
-## 四、使用案例圖(Use Case Diagram)
-
-![使用案例](功能圖.png)
 
 
 ## 五、案例說明：
