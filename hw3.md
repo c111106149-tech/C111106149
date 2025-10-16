@@ -46,16 +46,63 @@
 * 系統架構應支持 **水平擴展**，以應對用戶量增長。
 
 
+## 三、功能分解圖 (Functional Decomposition Diagram)
+
+```mermaid
+
+graph LR
+
+    %% === 角色定義 ===
+    U1["使用者 User"]
+    U2["系統管理員 Administrator"]
+
+    %% === 系統範圍 ===
+    subgraph "二手書交易平台 Used Book Trading Platform"
+        UC1(用戶註冊 / User Registration)
+        UC2(登入 / Login)
+        UC3(頁面管理 / Profile Management)
+        UC5(商品搜尋 / Product Search)
+        UC6(條件排序 / Sorting)
+        UC7(我的最愛 / Favorite List)
+        UC8(上架書籍 / List Used Book)
+        UC9(購買書籍 / Purchase Book)
+        UC10(我的評分 / Rating System)
+        UC11(管理帳號 / Account Management)
+    end
+
+    %% --- 以下定義所有連接線 ---
+
+    %% 使用者的連接
+    U1 --> UC1
+    U1 --> UC2
+    U1 --> UC3
+    U1 --> UC5
+    U1 --> UC6
+    U1 --> UC7
+    U1 --> UC8
+    U1 --> UC9
+    U1 --> UC10
+
+    %% 系統管理員的連接
+    U2 --> UC11
+
+    %% 系統內部關聯
+    UC5 -- "include" --> UC6
+    UC8 -- "extend" --> UC9
+
+   
+```
+
+---
 
 
 
-## 三. 功能分解圖(functional decomposition diagram, FDD)
-![功能圖.png](功能圖.png)
-![使用案例](使用案例)
+## 四、使用案例說明(Use Case Description)
+
+![使用案例](功能圖.png)
 
 
-
-## 案例說明：
+## 五、案例說明：
 
 ### 賣家用例
 
