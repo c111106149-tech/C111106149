@@ -62,7 +62,7 @@ graph LR
     U2["系統管理員 Administrator"]
 
     %% === 系統範圍 ===
-    subgraph "二手書交易平台 Used Book Trading Platform"
+    subgraph "二手書交易平台"
         UC1(用戶註冊 / User Registration)
         UC2(登入 / Login)
         UC3(頁面管理 / Profile Management)
